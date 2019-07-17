@@ -1,7 +1,6 @@
 package sample;
 
-public class State {
-    static enum state{
+public enum State {
         Start,End,Play,Win
-    }
+
 }

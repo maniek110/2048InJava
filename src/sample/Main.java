@@ -13,8 +13,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Controller controller=new Controller();
-        primaryStage.setTitle("Hello World");
-        primaryStage=controller.getStage();
+        GameView gameView=new GameView();
+        primaryStage=gameView.getStage();
         primaryStage.show();
     }
 

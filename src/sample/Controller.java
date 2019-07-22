@@ -3,9 +3,8 @@ package sample;
 import javafx.stage.Stage;
 
 public class Controller {
-
     //Actual state
-    private State state;
+    private static State state;
     //Input Directions
     private boolean up,down,left,right,restart;
 
@@ -15,12 +14,13 @@ public class Controller {
         state=State.Play;
         up=down=left=right=restart=false;
         gameView=new GameView();
+        state=State.Start;
     }
     public void Start(){
 
     }
 
-    public State getState() {
+    public static State getState() {
         return state;
     }
 
@@ -31,4 +31,6 @@ public class Controller {
     public Stage getStage() {
         return gameView.getStage();
     }
+
 }
+

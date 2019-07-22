@@ -14,8 +14,10 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Controller controller=new Controller();
         GameView gameView=new GameView();
-        primaryStage=gameView.getStage();
+        primaryStage=controller.getStage();
+        primaryStage.setResizable(false);
         primaryStage.show();
+
     }
 
 
